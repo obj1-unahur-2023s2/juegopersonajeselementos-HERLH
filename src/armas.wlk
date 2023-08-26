@@ -1,2 +1,7 @@
-object ballesta{}
-object jabalina{}
+
+object ballesta{
+	estaCargada() = 
+}
+object jabalina{
+	estaCargada() = 
+}

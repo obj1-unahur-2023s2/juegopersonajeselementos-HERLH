@@ -1,15 +1,24 @@
-
+import armas.*
+import elementos.*
 
 object luisa{
 	
 }
 object floki{
-	var arma = jabalina
+	var arma
 	
 	method armaEquipada() = arma
 	method armaEquipada(unArma) {arma=unArma}
-	method encontrar(elemento) {elemento.recibirAtaque()}
+	method encontrar(elemento) {
+		if (arma.estaCargada()){
+			elemento.recibirAtaque(arma.potencia())
+			arma.usar()
+		}
+	}
 }
 object mario{
-	method encontrar(elemento)
+	method encontrar (elemento) {
+		
+	}
+	
 }
