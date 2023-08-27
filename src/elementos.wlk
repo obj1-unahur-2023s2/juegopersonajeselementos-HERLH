@@ -10,9 +10,10 @@ object castillo{
 	
 }
 object aurora{
-	var altura = 1
 	var viva = true
 	
+	method estaViva() = viva
+	method altura() = 1
 	method recibirAtaque(unValor) {viva = unValor <= 10 && viva}
 	method recibirTrabajo() {}
 	method otogarUnidades() = 15

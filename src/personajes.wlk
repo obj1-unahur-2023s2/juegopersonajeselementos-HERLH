@@ -17,7 +17,11 @@ object floki{
 	}
 }
 object mario{
+	var cantidadRecolectada = 0
+	
 	method encontrar (elemento) {
+		elemento.recibirTrabajo()
+		cantidadRecolectada += elemento.otorgarUnidades()
 		
 	}
 	
